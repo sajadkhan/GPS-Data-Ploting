@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TangramMap/TGMapViewController.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : TGMapViewController
 
 
 @end

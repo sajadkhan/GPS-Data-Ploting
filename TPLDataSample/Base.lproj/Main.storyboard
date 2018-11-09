@@ -1,26 +1,119 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8No-Tm-dlT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--GLKit View Controller-->
+        <scene sceneID="Biq-Oo-Ea7">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <glkViewController preferredFramesPerSecond="30" id="8No-Tm-dlT" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Opw-pK-XQ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="8zr-lj-qv4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="gSQ-t4-q84">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQx-UP-Agd">
+                                <rect key="frame" x="16" y="617" width="32" height="30"/>
+                                <state key="normal" title="Files"/>
+                                <connections>
+                                    <action selector="filesPressed:" destination="8No-Tm-dlT" eventType="touchUpInside" id="YA7-hk-JaG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLY-w6-opk">
+                                <rect key="frame" x="319" y="617" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearPressed:" destination="8No-Tm-dlT" eventType="touchUpInside" id="pcE-60-FWB"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0d3-P8-IV7" customClass="FilesView">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fM1-NF-joP">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="136"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="136" id="2wP-pv-drH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="0d3-P8-IV7" id="kFC-P2-Jkc"/>
+                                            <outlet property="delegate" destination="0d3-P8-IV7" id="F9P-eh-2LB"/>
+                                        </connections>
+                                    </tableView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JNb-GU-KVN">
+                                        <rect key="frame" x="0.0" y="196" width="375" height="371"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="0d3-P8-IV7" id="s8d-cU-8qV"/>
+                                            <outlet property="delegate" destination="0d3-P8-IV7" id="U1Y-BU-Dak"/>
+                                        </connections>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4m-Rp-HUX">
+                                        <rect key="frame" x="8" y="12" width="32" height="30"/>
+                                        <state key="normal" title="Hide"/>
+                                        <connections>
+                                            <action selector="hidePressed:" destination="0d3-P8-IV7" eventType="touchUpInside" id="Lq7-lM-G3u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMp-NO-ZKb">
+                                        <rect key="frame" x="284" y="12" width="83" height="30"/>
+                                        <state key="normal" title="Draw Folder"/>
+                                        <connections>
+                                            <action selector="drawFolderPressed:" destination="0d3-P8-IV7" eventType="touchUpInside" id="5Ce-ce-nNQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JNb-GU-KVN" firstAttribute="leading" secondItem="0d3-P8-IV7" secondAttribute="leading" id="1dD-Rd-waj"/>
+                                    <constraint firstItem="fM1-NF-joP" firstAttribute="leading" secondItem="0d3-P8-IV7" secondAttribute="leading" id="8BV-GR-Xrp"/>
+                                    <constraint firstItem="H4m-Rp-HUX" firstAttribute="leading" secondItem="0d3-P8-IV7" secondAttribute="leading" constant="8" id="Amb-i1-ZId"/>
+                                    <constraint firstAttribute="trailing" secondItem="fM1-NF-joP" secondAttribute="trailing" id="L8a-pH-D0R"/>
+                                    <constraint firstItem="H4m-Rp-HUX" firstAttribute="top" secondItem="0d3-P8-IV7" secondAttribute="top" constant="12" id="LBL-H4-TBS"/>
+                                    <constraint firstAttribute="bottom" secondItem="JNb-GU-KVN" secondAttribute="bottom" id="Oo0-g9-zPT"/>
+                                    <constraint firstItem="JNb-GU-KVN" firstAttribute="top" secondItem="fM1-NF-joP" secondAttribute="bottom" constant="10" id="bKn-KC-eR2"/>
+                                    <constraint firstAttribute="trailing" secondItem="CMp-NO-ZKb" secondAttribute="trailing" constant="8" id="hJg-oq-VvE"/>
+                                    <constraint firstAttribute="trailing" secondItem="JNb-GU-KVN" secondAttribute="trailing" id="phB-md-yap"/>
+                                    <constraint firstItem="fM1-NF-joP" firstAttribute="top" secondItem="0d3-P8-IV7" secondAttribute="top" constant="50" id="rKd-yp-vUU"/>
+                                    <constraint firstItem="CMp-NO-ZKb" firstAttribute="top" secondItem="0d3-P8-IV7" secondAttribute="top" constant="12" id="vTC-DD-6PQ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="filesListTable" destination="JNb-GU-KVN" id="Lex-we-46d"/>
+                                    <outlet property="folderListView" destination="fM1-NF-joP" id="NPb-s2-kBI"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sLY-w6-opk" secondAttribute="trailing" constant="20" id="CaV-w6-woM"/>
+                            <constraint firstItem="VQx-UP-Agd" firstAttribute="leading" secondItem="gSQ-t4-q84" secondAttribute="leadingMargin" id="QwU-85-LVA"/>
+                            <constraint firstItem="0d3-P8-IV7" firstAttribute="leading" secondItem="gSQ-t4-q84" secondAttribute="leading" id="XQP-3c-5eO"/>
+                            <constraint firstItem="0d3-P8-IV7" firstAttribute="top" secondItem="gSQ-t4-q84" secondAttribute="top" constant="100" id="gPv-Cp-b7W"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="sLY-w6-opk" secondAttribute="bottom" constant="20" id="nD0-uh-wKT"/>
+                            <constraint firstItem="8zr-lj-qv4" firstAttribute="top" secondItem="VQx-UP-Agd" secondAttribute="bottom" constant="20" id="oFI-VI-hOi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0d3-P8-IV7" secondAttribute="bottom" id="uhr-f6-ejx"/>
+                            <constraint firstItem="0d3-P8-IV7" firstAttribute="width" secondItem="gSQ-t4-q84" secondAttribute="width" id="yD8-mv-Lto"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="8No-Tm-dlT" id="NsW-6A-KKv"/>
+                        </connections>
+                    </glkView>
+                    <connections>
+                        <outlet property="filesView" destination="0d3-P8-IV7" id="kWP-y6-HaH"/>
+                    </connections>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTQ-tV-a0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="72.799999999999997" y="128.18590704647679"/>
         </scene>
     </scenes>
 </document>

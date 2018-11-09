@@ -15,6 +15,12 @@
 		0628F1181ED8393F00A12345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0628F1161ED8393F00A12345 /* LaunchScreen.storyboard */; };
 		0628F1231ED8393F00A12345 /* TPLDataSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628F1221ED8393F00A12345 /* TPLDataSampleTests.m */; };
 		0628F12E1ED8393F00A12345 /* TPLDataSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628F12D1ED8393F00A12345 /* TPLDataSampleUITests.m */; };
+		0628F1861ED8397300A12345 /* TangramMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0628F16B1ED8395E00A12345 /* TangramMap.framework */; };
+		0628F1881ED8398500A12345 /* TangramMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0628F1871ED8398500A12345 /* TangramMap.framework */; };
+		0628F1891ED8398500A12345 /* TangramMap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0628F1871ED8398500A12345 /* TangramMap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0628F18C1ED83A8000A12345 /* scene.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 0628F18B1ED83A8000A12345 /* scene.yaml */; };
+		0628F18E1ED8466F00A12345 /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0628F18D1ED8466F00A12345 /* assets.bundle */; };
+		0628F1911ED8601F00A12345 /* FilesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628F1901ED8601F00A12345 /* FilesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,119 @@
 			remoteGlobalIDString = 0628F1041ED8393F00A12345;
 			remoteInfo = TPLDataSample;
 		};
+		0628F16A1ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEF6DE053B62442B9995DC73;
+			remoteInfo = TangramMap;
+		};
+		0628F16C1ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5ADC8B72D0C24FADA88772F3;
+			remoteInfo = "css-color-parser-cpp";
+		};
+		0628F16E1ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC637B9DAF6447388208DDE1;
+			remoteInfo = duktape;
+		};
+		0628F1701ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 623C88E7559E409D89262311;
+			remoteInfo = "geojson-vt-cpp";
+		};
+		0628F1721ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7641D52C90ED49378ED62499;
+			remoteInfo = "yaml-cpp";
+		};
+		0628F1741ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8946378092714FA791842070;
+			remoteInfo = harfbuzz;
+		};
+		0628F1761ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 286C5B0A6B1C487A8EDC1FF6;
+			remoteInfo = icucommon;
+		};
+		0628F1781ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08D96C248A4046F686F6336A;
+			remoteInfo = freetype;
+		};
+		0628F17A1ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F7AD509933D4DEA97E4C657;
+			remoteInfo = alfons;
+		};
+		0628F17C1ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFA3E22C55814F328DEDF8BF;
+			remoteInfo = linebreak;
+		};
+		0628F17E1ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 467EC66AE0D04D9FB682B7A5;
+			remoteInfo = SQLiteCpp;
+		};
+		0628F1801ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9FCF1549BD441C7A841C91C;
+			remoteInfo = sqlite3;
+		};
+		0628F1821ED8395E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8802FC359C754B0688047DEA;
+			remoteInfo = core;
+		};
+		0628F1841ED8396E00A12345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 28502B2C659C4AFC810CC15E;
+			remoteInfo = TangramMap;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0628F18A1ED8398500A12345 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0628F1891ED8398500A12345 /* TangramMap.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0628F1051ED8393F00A12345 /* TPLDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPLDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +169,12 @@
 		0628F1291ED8393F00A12345 /* TPLDataSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPLDataSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0628F12D1ED8393F00A12345 /* TPLDataSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPLDataSampleUITests.m; sourceTree = "<group>"; };
 		0628F12F1ED8393F00A12345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0628F13B1ED8395D00A12345 /* tangram.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tangram.xcodeproj; path = "../tplmaps3d/build/ios-framework/tangram.xcodeproj"; sourceTree = "<group>"; };
+		0628F1871ED8398500A12345 /* TangramMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TangramMap.framework; path = "../tplmaps3d/build/ios-framework/lib/Debug/TangramMap.framework"; sourceTree = "<group>"; };
+		0628F18B1ED83A8000A12345 /* scene.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene.yaml; sourceTree = "<group>"; };
+		0628F18D1ED8466F00A12345 /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
+		0628F18F1ED8601F00A12345 /* FilesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesView.h; sourceTree = "<group>"; };
+		0628F1901ED8601F00A12345 /* FilesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +182,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0628F1881ED8398500A12345 /* TangramMap.framework in Frameworks */,
+				0628F1861ED8397300A12345 /* TangramMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +207,8 @@
 		0628F0FC1ED8393F00A12345 = {
 			isa = PBXGroup;
 			children = (
+				0628F1871ED8398500A12345 /* TangramMap.framework */,
+				0628F13B1ED8395D00A12345 /* tangram.xcodeproj */,
 				0628F1071ED8393F00A12345 /* TPLDataSample */,
 				0628F1211ED8393F00A12345 /* TPLDataSampleTests */,
 				0628F12C1ED8393F00A12345 /* TPLDataSampleUITests */,
@@ -105,8 +233,12 @@
 				0628F10C1ED8393F00A12345 /* AppDelegate.m */,
 				0628F10E1ED8393F00A12345 /* ViewController.h */,
 				0628F10F1ED8393F00A12345 /* ViewController.m */,
+				0628F18F1ED8601F00A12345 /* FilesView.h */,
+				0628F1901ED8601F00A12345 /* FilesView.m */,
 				0628F1111ED8393F00A12345 /* Main.storyboard */,
 				0628F1141ED8393F00A12345 /* Assets.xcassets */,
+				0628F18D1ED8466F00A12345 /* assets.bundle */,
+				0628F18B1ED83A8000A12345 /* scene.yaml */,
 				0628F1161ED8393F00A12345 /* LaunchScreen.storyboard */,
 				0628F1191ED8393F00A12345 /* Info.plist */,
 				0628F1081ED8393F00A12345 /* Supporting Files */,
@@ -140,6 +272,26 @@
 			path = TPLDataSampleUITests;
 			sourceTree = "<group>";
 		};
+		0628F13C1ED8395D00A12345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0628F16B1ED8395E00A12345 /* TangramMap.framework */,
+				0628F16D1ED8395E00A12345 /* libcss-color-parser-cpp.a */,
+				0628F16F1ED8395E00A12345 /* libduktape.a */,
+				0628F1711ED8395E00A12345 /* libgeojson-vt-cpp.a */,
+				0628F1731ED8395E00A12345 /* libyaml-cpp.a */,
+				0628F1751ED8395E00A12345 /* libharfbuzz.a */,
+				0628F1771ED8395E00A12345 /* libicucommon.a */,
+				0628F1791ED8395E00A12345 /* libfreetyped.a */,
+				0628F17B1ED8395E00A12345 /* libalfons.a */,
+				0628F17D1ED8395E00A12345 /* liblinebreak.a */,
+				0628F17F1ED8395E00A12345 /* libSQLiteCpp.a */,
+				0628F1811ED8395E00A12345 /* libsqlite3.a */,
+				0628F1831ED8395E00A12345 /* libcore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +302,12 @@
 				0628F1011ED8393F00A12345 /* Sources */,
 				0628F1021ED8393F00A12345 /* Frameworks */,
 				0628F1031ED8393F00A12345 /* Resources */,
+				0628F18A1ED8398500A12345 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0628F1851ED8396E00A12345 /* PBXTargetDependency */,
 			);
 			name = TPLDataSample;
 			productName = TPLDataSample;
@@ -207,6 +361,7 @@
 				TargetAttributes = {
 					0628F1041ED8393F00A12345 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EU2T75VWJ8;
 						ProvisioningStyle = Automatic;
 					};
 					0628F11D1ED8393F00A12345 = {
@@ -232,6 +387,12 @@
 			mainGroup = 0628F0FC1ED8393F00A12345;
 			productRefGroup = 0628F1061ED8393F00A12345 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0628F13C1ED8395D00A12345 /* Products */;
+					ProjectRef = 0628F13B1ED8395D00A12345 /* tangram.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0628F1041ED8393F00A12345 /* TPLDataSample */,
@@ -241,12 +402,108 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0628F16B1ED8395E00A12345 /* TangramMap.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TangramMap.framework;
+			remoteRef = 0628F16A1ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F16D1ED8395E00A12345 /* libcss-color-parser-cpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcss-color-parser-cpp.a";
+			remoteRef = 0628F16C1ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F16F1ED8395E00A12345 /* libduktape.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libduktape.a;
+			remoteRef = 0628F16E1ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F1711ED8395E00A12345 /* libgeojson-vt-cpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libgeojson-vt-cpp.a";
+			remoteRef = 0628F1701ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F1731ED8395E00A12345 /* libyaml-cpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libyaml-cpp.a";
+			remoteRef = 0628F1721ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F1751ED8395E00A12345 /* libharfbuzz.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libharfbuzz.a;
+			remoteRef = 0628F1741ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F1771ED8395E00A12345 /* libicucommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libicucommon.a;
+			remoteRef = 0628F1761ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F1791ED8395E00A12345 /* libfreetyped.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfreetyped.a;
+			remoteRef = 0628F1781ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F17B1ED8395E00A12345 /* libalfons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libalfons.a;
+			remoteRef = 0628F17A1ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F17D1ED8395E00A12345 /* liblinebreak.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblinebreak.a;
+			remoteRef = 0628F17C1ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F17F1ED8395E00A12345 /* libSQLiteCpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSQLiteCpp.a;
+			remoteRef = 0628F17E1ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F1811ED8395E00A12345 /* libsqlite3.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlite3.a;
+			remoteRef = 0628F1801ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0628F1831ED8395E00A12345 /* libcore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcore.a;
+			remoteRef = 0628F1821ED8395E00A12345 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		0628F1031ED8393F00A12345 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0628F1181ED8393F00A12345 /* LaunchScreen.storyboard in Resources */,
+				0628F18E1ED8466F00A12345 /* assets.bundle in Resources */,
+				0628F18C1ED83A8000A12345 /* scene.yaml in Resources */,
 				0628F1151ED8393F00A12345 /* Assets.xcassets in Resources */,
 				0628F1131ED8393F00A12345 /* Main.storyboard in Resources */,
 			);
@@ -273,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0628F1911ED8601F00A12345 /* FilesView.m in Sources */,
 				0628F1101ED8393F00A12345 /* ViewController.m in Sources */,
 				0628F10D1ED8393F00A12345 /* AppDelegate.m in Sources */,
 				0628F10A1ED8393F00A12345 /* main.m in Sources */,
@@ -307,6 +565,11 @@
 			isa = PBXTargetDependency;
 			target = 0628F1041ED8393F00A12345 /* TPLDataSample */;
 			targetProxy = 0628F12A1ED8393F00A12345 /* PBXContainerItemProxy */;
+		};
+		0628F1851ED8396E00A12345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TangramMap;
+			targetProxy = 0628F1841ED8396E00A12345 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -426,7 +689,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EU2T75VWJ8;
+				FRAMEWORK_SEARCH_PATHS = "/Developer/tplmaps3d/build/ios-framework/lib/Debug/";
 				INFOPLIST_FILE = TPLDataSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tpl.TPLDataSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +703,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EU2T75VWJ8;
+				FRAMEWORK_SEARCH_PATHS = "/Developer/tplmaps3d/build/ios-framework/lib/Debug/";
 				INFOPLIST_FILE = TPLDataSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tpl.TPLDataSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +778,7 @@
 				0628F1341ED8393F00A12345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0628F1351ED8393F00A12345 /* Build configuration list for PBXNativeTarget "TPLDataSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +787,7 @@
 				0628F1371ED8393F00A12345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0628F1381ED8393F00A12345 /* Build configuration list for PBXNativeTarget "TPLDataSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +796,7 @@
 				0628F13A1ED8393F00A12345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
